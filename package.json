@@ -1,0 +1,32 @@
+{
+  "name": "arrowstore",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "rslib build",
+    "check": "biome check --write",
+    "dev": "rslib build --watch",
+    "format": "biome format --write",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@rslib/core": "^0.9.2",
+    "@types/node": "^22.15.30",
+    "ts-jest": "^29.3.4",
+    "typescript": "^5.8.3"
+  },
+  "private": true,
+  "dependencies": {
+    "@types/jest": "^29.5.14",
+    "apache-arrow": "^20.0.0"
+  }
+}
