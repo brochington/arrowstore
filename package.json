@@ -1,5 +1,5 @@
 {
-  "name": "arrowstore",
+  "name": "@brochington/arrowstore",
   "version": "1.0.0",
   "type": "module",
   "exports": {
@@ -24,7 +24,6 @@
     "ts-jest": "^29.3.4",
     "typescript": "^5.8.3"
   },
-  "private": true,
   "dependencies": {
     "@types/jest": "^29.5.14",
     "apache-arrow": "^20.0.0"
